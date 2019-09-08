@@ -5,80 +5,249 @@
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
-  	<header>
-  		<nav>
-  			<img src="img/index-logo.svg" alt="Логотип магазина Device">
-  			<ul class="top-nav">
-  				<li>
-  					<form method="get" action="echo.htmlacademy.ru">
-  						<input type="search" name="q" placeholder="Поиск по сайту">
-  						<input type="submit" >
-  					</form>
-  				</li>
-  				<li>
-  					<button type="button">Войти</button>
-  				</li>
-  				<li>Сравнить</li>
-  				<li>Корзина</li>
-  			</ul>
-			<ul class="bottom-nav">
-				<li><a href="catalog.html">каталог товаров</a></li>
-				<li><a href="deliveri.html">доставка</a></li>
-				<li><a href="warrantly.html">гарантия</a></li>
-				<li><a href="contacts.html">контакты</a></li>
-			</ul>	 			
-  		</nav>
-  	</header>
-  	<main>
-  		<section class="about-us">
-  			<h2>О нас</h2>
-  			<p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас</p>
-  			<p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-  			<ul>
-				<li>Деловые Линии</li>
-				<li>Автотрейдинг</li>
-				<li>ЖелДорЭкспедиция</li>
-  			</ul>
-  			<p><a href="more-about-us">подробнее о нас</a></p>
-  		</section>
-  		<section class="contacts">
-  			<h2>Контакты</h2>
-  			<p>Вы можете забрать товар сами, заехав в наш офис. Заодно вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-  			<img src="img/map" alt="Наше местоположение">
-  			<p>Напишите нам</p>
-  		</section>
-  	</main>
-  	<footer>
-  		<div class="footer-top">
-  			<img src="img/index-logo2.svg" alt="Логотип магазина Device">
-  			<ul>
-  				<li>Войти</li>
-  				<li>Сравнить</li>
-  				<li>Корзина</li>
-  			</ul>
-  			<div class="footer-middle">
-  				<p>г. Москва, ул. Строителей, 15</p>
-  					<ul>
-  						<li><a href="deliveri.html">доставка</a></li>
-  						<li><a href="warrantly.html">гарантия</a></li>
-  						<li><a href="contacts.html">контакты</a></li>
-  					</ul>
-  				<p>Тел.: +7 (495) 495-95-95</p>
-  				<div class="footer-bottom">
-  					<span></span>
-  					<ul>
-  						<li><a href="#">Facebook</a></li>
-  						<li><a href="#">Instagram</a></li>
-  						<li><a href="#">Twitter</a></li>
-  					</ul>
-  					<span></span>
-  				</div>
-  			</div>
-  		</div>
-  	</footer>
-
-
-    
-
+    <header>
+      <nav>
+        <a>
+          <img src="img/index-logo.svg" alt="Логотип магазина Device">
+        </a>
+        <ul class="top-nav">
+          <li>
+            <form method="get" action="echo.htmlacademy.ru">
+              <input type="search" name="q" placeholder="Поиск по сайту">
+              <input type="submit">
+            </form>
+          </li>
+          <li>
+            <button type="button">Войти</button>
+          </li>
+          <li>Сравнить</li>
+          <li>Корзина</li>
+        </ul>
+        <ul class="bottom-nav">
+          <li>
+            <a href="catalog.html">каталог товаров</a>
+            <ul class="sub-menu">
+              <li><a href="#"></a></li>
+              <li><a href="#"></a></li>
+              <li><a href="#"></a></li>
+              <li><a href="#"></a></li>
+              <li><a href="#"></a></li>
+            </ul>
+          </li>
+          <li><a href="deliveri.html">доставка</a></li>
+          <li><a href="warrantly.html">гарантия</a></li>
+          <li><a href="contacts.html">контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="preivew-items">
+        <h1>Цифровая электроника</h1>
+        <ul>
+          <li>
+            <div>
+              <a href="#"><img src="img/longmax-selfi.jpg" alt="Самая длинная селфи-палка"></a>
+              <p>Делай селфи, как Бен Стиллер!</p>
+              <p>Самая длинная палка для селфи в нашем магазине. Восемь(Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+              <a href="#">Подробнее</a>
+              <table>
+                <tr>
+                  <td>8,5 м</td>
+                  <td>Длина палки</td>
+                </tr>
+                <tr>
+                  <td>5 кг</td>
+                  <td>Вес палки</td>
+                </tr>
+                <tr>
+                  <td>Карбон</td>
+                  <td>Материал</td>
+                </tr>
+              </table>
+            </div>
+          </li>
+          <li>
+            <div></div>
+          </li>
+          <li>
+            <div></div>
+          </li>
+        </ul>
+        <div class="toggle">
+          <ul>
+            <li><input type="radio" checked></li>
+            <li><input type="radio"></li>
+            <li><input type="radio"></li>
+          </ul>
+        </div>
+      </section>
+      <section class="catalog-items">
+        <h2>Каталог товаров</h2>
+        <ul>
+          <li>
+            <a href="catalog-items-virtual-reality.html">
+              <img src="img/irtual-reality.png" alt="Виртуальная реальность">
+            </a>
+            <h3><a href="catalog-items-virtual-reality.html">Виртуальная реальность</a></h3>
+          </li>
+          <li>
+            <a href="catalog-items-monopod.html">
+              <img src="img/monopod.png" alt="Моноподы для селфи">
+            </a>
+            <h3>
+              <a href="catalog-items-monopod.html">Моноподы для селфи
+              </a>
+            </h3>
+          </li>
+          <li>
+            <a href="catalog-items-action-camera.html">
+              <img src="img/action-camera.png" alt="Экшн-камеры">
+            </a>
+            <h3>
+              <a href="catalog-items-action-camera.html">Экшн-камеры
+              </a>
+            </h3>
+          </li>
+          <li>
+            <a href="catalog-items-fitness-bracelets.html">
+              <img src="img/fitness-bracelets.png" alt="Фитнес-браслеты">
+            </a>
+            <h3>
+              <a href="catalog-items-fitness-bracelets.htm">Фитнес-браслеты
+              </a>
+            </h3>
+          </li>
+          <li>
+            <a href="catalog-items-smart-watch.html">
+              <img src="" alt="Умные часы">
+            </a>
+            <h3>
+              <a href="catalog-items-smart-watch.html">Умные часы</a>
+            </h3>
+          </li>
+          <li>
+            <a href="catalog-items-quadrocopter.html">
+              <img src="" alt="Квадрокоптеры">
+            </a>
+            <h3>
+              <a href="catalog-items-quadrocopter.html">Квадрокоптеры
+              </a>
+            </h3>
+          </li>
+        </ul>
+      </section>
+      <section class="additional-information">
+        <h2>Дополнительная информация</h2>
+        <ul>
+          <li>
+            <a href="deliveri.html">доставка
+            </a>
+              <ul>
+                <li>
+                  <div>
+                    <h3>Доставка</h3>
+                    <p>Мы с удовольствием доставим ваш товар прямо к вашему родъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+                  </div>
+                </li>
+              </ul>
+          </li>
+          <li>
+            <a href="warrantly.html">гарантия
+            </a>
+              <ul>
+                <li>
+                  <div>
+                    <h3>Гарантия</h3>
+                    <p></p>
+                  </div>
+                </li>
+              </ul>
+          </li>
+          <li>
+            <a href="credit.html">кредит
+            </a>
+              <ul>
+                <li>
+                  <div>
+                    <h3>Кредит</h3>
+                    <p></p>
+                  </div>
+                </li>
+              </ul>
+          </li>
+        </ul>
+      </section>
+      <section class="firms">
+        <ul>
+          <li>
+            <a href="img/dgi.png">
+              <img src="https://www.dji.com" alt="Dji">
+            </a>
+          </li>
+          <li>
+            <a href="http://www.sp-gadgets.com/">
+              <img src="img/sp-gadgets.png" alt="SP Gadgets">
+            </a>
+          </li>
+          <li>
+            <a href="https://gopro.com">
+              <img src="img/go-pro.png" alt="GoPro">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.vive.com ">
+              <img src="img/vive.png" alt="Vive">
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="about-us">
+        <h2>О нас</h2>
+        <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас</p>
+        <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+        <ul>
+          <li>Деловые Линии</li>
+          <li>Автотрейдинг</li>
+          <li>ЖелДорЭкспедиция</li>
+        </ul>
+        <a href="more-about-us">подробнее о нас</a>
+      </section>
+      <section class="contacts">
+        <h2>Контакты</h2>
+        <p>Вы можете забрать товар сами, заехав в наш офис. Заодно вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+        <a href="#">
+          <img src="img/map" alt="Наше местоположение">
+        </a>
+        <a href="mail.html">Напишите нам</a>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-top">
+        <a>
+          <img src="img/index-logo2.svg" alt="Логотип магазина Device">
+        </a>
+        <ul>
+          <li><a href="login.html">Войти</a></li>
+          <li><a href="compare-price.html">Сравнить</a></li>
+          <li><a href="basket.html">Корзина</a></li>
+        </ul>
+        <div class="footer-middle">
+          <p>г. Москва, ул. Строителей, 15</p>
+          <ul>
+            <li><a href="deliveri.html">доставка</a></li>
+            <li><a href="warrantly.html">гарантия</a></li>
+            <li><a href="contacts.html">контакты</a></li>
+          </ul>
+          <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+        </div>
+        <div class="footer-bottom">
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

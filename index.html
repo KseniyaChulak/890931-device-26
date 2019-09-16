@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="header">
       <nav>
         <a>
-          <img src="img/index-logo.svg" alt="Логотип магазина Device">
+          <img src="img/header/logo-header.svg" alt="Логотип магазина Device" width="163" height="35">
         </a>
         <ul class="top-nav">
           <li>
@@ -183,22 +184,22 @@
         <ul>
           <li>
             <a href="#">
-              <img src="https://www.dji.com" alt="Dji">
+              <img src="img/company/logo-1.jpg" alt="Dji" width="260" height="100">
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="img/sp-gadgets.png" alt="SP Gadgets">
+              <img src="img/company/logo-2.jpg" alt="SP Gadgets" width="260" height="100">
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="img/go-pro.png" alt="GoPro">
+              <img src="img/company/logo-3.jpg" alt="GoPro" width="260" height="100">
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="img/vive.png" alt="Ive">
+              <img src="img/company/logo-4.jpg" alt="Ive" width="260" height="100">
             </a>
           </li>
         </ul>
@@ -218,15 +219,39 @@
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно вы сможете проверить работоспособность покупки. Всякое бывает.</p>
         <a href="#">
-          <img src="img/map" alt="Наше местоположение">
+          <img src="img/footer/map.jpg" alt="Наше местоположение" width="560" height="222"> 
         </a>
+        <section class="visually-hidden">
+          <img src="img/footer/map-big.jpg" alt="Наше местоположение улица Строителей, 15, г. Москва" width="960" height="559">
+          <button type="button">Закрыть</button>
+        </section>
         <a href="#">Напишите нам</a>
+        <section class="visually-hidden">
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <fieldset>
+              <label for="user-name">Ваше имя:</label>
+              <input id="user-name" type="text" name="user-name" placeholder="Имя Фамилия">
+            </fieldset>
+            <fieldset>
+              <label for="user-email">Ваш e-mail:</label>
+              <input id="user-email" type="email" name="user-email" placeholder="email@example.com">
+            </fieldset>
+            <fieldset>
+              <label for="letter">Текст письма:</label>
+              <textarea name="text" id="letter" cols="30" rows="10" placeholder="В свободной форме">
+              </textarea>
+            </fieldset>
+            <button type="submit">Отправить</button>
+            <button type="button">Закрыть</button>
+          </form>
+        </section>
+
       </section>
     </main>
     <footer>
       <div class="footer-top">
         <a>
-          <img src="img/index-logo2.svg" alt="Логотип магазина Device">
+          <img src="img/footer/logo-footer.svg" alt="Логотип магазина Device">
         </a>
         <ul>
           <li><a href="#">Войти</a></li>

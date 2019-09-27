@@ -1,0 +1,415 @@
+@font-face { 
+  font-family: Gilroy; 
+  src: url('gilroyextrabold.woff2') format('woff2'), 
+       url('gilroyextrabold.woff') format('woff'); 
+  font-weight: 800; 
+  font-style: normal; 
+}
+
+@font-face { 
+  font-family: Gilroy; 
+  src: url('gilroylight.woff2') format('woff2'), 
+       url('gilroylight.woff') format('woff'); 
+  font-weight: 400; 
+  font-style: normal; 
+}
+
+@font-face { 
+  font-family: 'Open Sans Light'; 
+  src: url('opensanslight.woff2') format('woff2'), 
+       url('opensanslight.woff') format('woff'); 
+  font-weight: 300; 
+  font-style: normal;
+}
+
+@font-face { 
+  font-family: 'Open Sans'; 
+  src: url('opensans.woff2') format('woff2'), 
+       url('opensans.woff') format('woff'); 
+  font-weight: normal; 
+  font-style: normal;
+ }
+
+body {
+	margin: 0;
+	padding: 0;
+  	font: 300 15px/2 'Open Sans Light', Arial, sans-serif;
+  	color: #000000;
+  	background-color: #ffffff;
+  	width: 1440px;
+ }
+
+a {
+	text-decoration: none;
+ }
+
+.site-navigation>li>a {
+	font: 800 18px/1.33 Gilroy, Qanelas, sans-serif;
+	text-transform: uppercase;
+}
+
+.header-logo:hover path {
+	fill: #666666;
+}
+
+.header-logo:active path {
+	fill: #b2b2b2;
+}
+
+.header {
+	margin: 40px auto;
+	width: 1160px;
+
+
+}
+.button {
+	width: 55px;
+	height: 55px;
+	border: none;
+	line-height: 55px;
+	text-align: center;
+	vertical-align: middle;
+  }
+
+
+.button:hover path {
+	fill: #f0c52e;
+  }
+
+.button:active path {
+	fill: #faedc0;
+}
+
+.user-navigation,
+.site-navigation,
+.catalog-items-navigation,
+.catalog-items-navigation ul {
+	list-style: none;
+}	
+
+.main-navigation {
+	background-color: #f7e296;
+	color: #000000;
+}
+
+.user-navigation input[type="search"]:focus,
+.user-navigation a,
+.site-navigation a {
+	color: #000000;
+}
+
+
+
+.user-navigation input[type="search"]:hover,
+.user-navigation a:hover path,
+.user-navigation a:hover,
+.site-navigation a:hover {
+	color: #635a3c;
+	fill:  #635a3c;
+}
+
+.user-navigation input[type="search"],
+.user-navigation a:active path,
+.user-navigation a:active,
+.site-navigation a:active {
+	color: #ac9e69;
+	fill: #ac9e69;
+}
+
+.user-navigation input {
+	background-color: inherit;
+	border: none;
+}
+
+.user-navigation input[type="submit"] {
+	visibility: hidden;
+}
+
+.user-navigation input[type="search"]:focus+input[type="submit"] {
+	visibility: visible;
+	border: 1px solid #000000;
+}
+
+.user-navigation input[type="submit"]:hover {
+	color: #ffffff;
+	background-color: #000000;
+}
+.user-navigation input[type="submit"]:active {
+	color: #4d4d4d;
+}
+
+.user-navigation,
+.site-navigation {
+	display: flex;
+	flex-direction: row;
+}
+
+.user-navigation li,
+.site-navigation li {
+	margin-right: 20px;
+
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.slide-item h2 {
+	font: 47px/1.19 Gilroy, Qanelas, sans-serif;
+}
+
+.slide-item p {
+	font: 300 15px/2 'Open Sans Light', Arial, sans-serif;
+}
+
+.slide-item tr:first-child td {
+	font: 36px/1.33 Gilroy, Qanelas, sans-serif;
+}
+
+.slide-item td {
+	font: 300 13px/1.53 'Open Sans Light', Arial, sans-serif;
+}
+
+.preivew-items ul,
+.popular-items ul,
+.additional-information ul,
+.company ul,
+.about-us ul,
+.footer-top ul,
+.footer-middle ul,
+.footer-bottom ul {
+	list-style: none;
+
+}
+
+.popular-items ul {
+	display: flex;
+	flex-direction: row;
+}
+
+.popular-items li {
+	min-width: 160px;
+	min-height: 160px;
+	background-color: #f7e296;
+	margin-right: 40px;
+}
+.popular-items li {
+	position: relative;
+}
+
+.popular-items svg {
+	display: block;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.popular-items span {
+	font: 800 18px/1.33 Gilroy, Qanelas, sans-serif;
+	color: #000000;
+	display: block;
+	position: absolute;
+	bottom: -76px;
+}
+
+.popular-items li:hover {
+	background-color: #f0c52e;
+}
+
+.popular-items li:active path,
+.popular-items li:active span {
+	fill: #b89a30;
+	color: #b2b2b2;
+}
+
+.btn {
+	font: 800 18px/2.22 Gilroy, Qanelas, sans-serif;
+	color: #000000;
+	display: block;
+	width: 220px;
+	height: 40px;
+	border: none;
+	letter-spacing: 3.6px;
+	text-align: center;
+	text-transform: uppercase;
+	background: linear-gradient(to bottom, #ffffff 0%, #ffffff 40%, #f0c52e 40%, #f0c52e 60%, #ffffff 60%, #ffffff 100%);
+}
+
+.btn:hover {
+	background: linear-gradient(to bottom, #f0c52e 0%, #f0c52e 100%);
+
+}
+
+.btn:active {
+	color: #a88a20;
+
+}
+
+.about-us .btn,
+.contacts .btn {
+	width: 260px;
+}
+
+.additional-information {
+	margin-top: 80px;
+
+}
+
+.additional-information h3,
+.about-us h2,
+.contacts h2 {
+	font: 800 47px/1.02 Gilroy, Qanelas, sans-serif;
+
+}
+
+.additional-information .btn {
+	width: 160px;
+}
+
+.additional-information .btn:active {
+	background: linear-gradient(to bottom, #000000 0%, #000000 100%);
+	color: #f7e184;
+	width: 278px;
+
+}
+.company ul {
+	display: flex;
+	flex-direction: row;
+}
+
+.company a {
+
+	position: relative;
+	height: 100px;
+	width: 260px;
+	display: block;
+}
+
+.company img {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.logo-color-company {
+	opacity:0;
+	
+}
+
+.company a:hover .logo-company {
+	opacity: 0;
+	
+}
+
+.company a:hover .logo-color-company {
+
+	opacity: 1;
+}
+
+.about-us li {
+	font: 800 16px/2.5 Gilroy, Qanelas, sans-serif;
+}
+
+.visually-hidden label {
+	font: 800 18px/1.33 Gilroy, Qanelas, sans-serif;
+}
+
+.visually-hidden input,
+.visually-hidden textarea {
+	font: 14px/1.33 'Open Sans', Arial, sans-serif;
+}
+
+.footer {
+	background-color: #464646;
+}
+
+.footer-logo:hover path {
+	fill: #b5931c;
+}
+
+.footer-logo:active path {
+	fill: #7e6d31;
+}
+
+.footer-top a {
+	color: #c8c8c8;
+}
+
+.footer-top use {
+	fill: #ffc600;
+}
+
+.footer-top a:hover use {
+	fill: #b3921d;
+}
+
+.footer-top a:active use {
+	fill: #726435;
+}
+
+.footer-top a:hover {
+	color: #ffffff;
+}
+
+.footer-top a:active {
+	color: #7e7e7e;
+}
+
+.footer-middle p {
+	color: #ffffff;
+
+}
+
+.footer-middle a:not(.telefon) {
+	color: #ffffff;
+	font: 800 18px/1.33 Gilroy, Qanelas, sans-serif;
+	letter-spacing: 3.6px;
+	text-transform: uppercase;
+}
+
+.footer-middle .telefon {
+	color: #ffffff;
+
+}
+
+.footer-middle ul a:hover {
+	color: #a6a6a6;
+}
+
+.footer-middle ul a:active {
+	color: #777777;
+
+}
+
+.footer-bottom a:hover path {
+	fill: #7e7e7e;
+}
+
+.footer-bottom a:active path {
+	fill: #595959;
+
+}
+
+.footer-bottom  .logo-html:hover path {
+	fill: #b5931c;
+
+}
+
+.footer-bottom  .logo-html:active path {
+	fill: #7e6d31;
+
+};
+
+
+
+
+
+
+
+
+
+
+
+

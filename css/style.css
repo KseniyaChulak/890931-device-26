@@ -15,7 +15,7 @@
 }
 
 @font-face { 
-  font-family: 'Open Sans Light'; 
+  font-family: 'Open Sans'; 
   src: url('opensanslight.woff2') format('woff2'), 
        url('opensanslight.woff') format('woff'); 
   font-weight: 300; 
@@ -33,7 +33,7 @@
 body {
 	margin: 0;
 	padding: 0;
-  	font: 300 15px/2 'Open Sans Light', Arial, sans-serif;
+  	font: 300 15px/2 'Open Sans', Arial, sans-serif;
   	color: #000000;
   	background-color: #ffffff;
   	width: 1440px;
@@ -159,7 +159,7 @@ input[type="radio"] {
 }
 
 .slide-item p {
-	font: 300 15px/2 'Open Sans Light', Arial, sans-serif;
+	font: 300 15px/2 'Open Sans', Arial, sans-serif;
 }
 
 .slide-item tr:first-child td {
@@ -167,7 +167,7 @@ input[type="radio"] {
 }
 
 .slide-item td {
-	font: 300 13px/1.53 'Open Sans Light', Arial, sans-serif;
+	font: 300 13px/1.53 'Open Sans', Arial, sans-serif;
 }
 
 .preivew-items ul,

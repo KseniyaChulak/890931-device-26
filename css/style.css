@@ -107,32 +107,43 @@ a {
 	fill: #b2b2b2;
 }
 
-.user-navigation input {
-	background-color: inherit;
+.item-navigation-form {
+	position: relative;
+	top: -5px;
 	border: none;
+	
+}
+
+.user-navigation input {
+	font: 300 15px/2 'Open Sans', Arial, sans-serif;
+	letter-spacing: 0.15px;
+	border: none;
+	outline: none;
+	background-color: inherit;
 }
 
 .user-navigation input[type="search"] {
 	position: relative;
-	top: -5px;
-	margin: 0;
+	top: -4px;
 	padding-left: 2px;
-	font: 300 15px/2 'Open Sans', Arial, sans-serif;
-	letter-spacing: 0.15px;
+	padding-right: 145px;
+	
+	
 }
 
-.item-navigation {
+.user-navigation input[type="submit"] {
 	box-sizing: border-box;
-
-}
-
+	width: 85px;
+	height: 49px;
+	
+} 
 .item-navigation a {
 	letter-spacing: 0.15px;
 
 }
 
 .item-navigation:nth-child(1) {
-	margin-right: 276px;
+	margin-right: 100px;
 }
 
 .item-navigation:nth-child(2) {
@@ -149,13 +160,10 @@ a {
 
 }
 
-
 .item-navigation:first-child .icon-user-nav:nth-of-type(1) {
 	width: 18px;
 	height: 18px;
-	padding-top: 6px;
 	padding-left: 6px;
-
 }
 
 .item-navigation .icon-3 {
@@ -169,43 +177,59 @@ a {
 
 } 
 
-.site-navigation {
-	margin-top: 31px;
+
+.user-navigation input[type="search"]::-moz-placeholder {
+	color: #ac9e69;
+}
+
+.user-navigation input[type="search"]::-webkit-input-placeholder { 
+	color: #ac9e69; 
+}
+.user-navigation input[type="search"]:-ms-input-placeholder { 
+	color: #ac9e69; 
+}
+.user-navigation input[type="search"]::-ms-input-placeholder { 
+	color: #ac9e69; 
+}
+.user-navigation input[type="search"]::placeholder { 
+	color: #ac9e69; 
+} 
+
+.user-navigation input[type="search"]:hover::-moz-placeholder {
+	color: #635a3c;
+}
+
+.user-navigation input[type="search"]:hover::-webkit-input-placeholder { 
+	color: #635a3c; 
+}
+.user-navigation input[type="search"]:hover:-ms-input-placeholder { 
+	color: #635a3c; 
+}
+.user-navigation input[type="search"]:hover::-ms-input-placeholder { 
+	color: #635a3c; 
+}
+.user-navigation input[type="search"]:hover::placeholder { 
+	color: #635a3c; 
+}
+
+.user-navigation input[type="search"] {
+   -webkit-appearance: none;
+}
+
+
+.user-navigation input[type="search"]:focus {
+	margin-top: -2px;
 
 }
 
-.menu-navigation>a {
-	font: 800 18px/1.33 'Gilroy', Qanelas, sans-serif;
-	text-transform: uppercase;
-	letter-spacing: 3.6px;
-}
-
-.menu-navigation:first-child a:nth-child(1) {
-	padding-left: 3px;
-	margin-right: 302px;
-
-}
-
-
-.plus-link {
-	position: relative;
-}
-
-.plus-link::after {
-	content:"";
-	width: 30px;
-	height: 30px;
+.user-navigation input[type="search"]:focus + .user-navigation input[type="search"]::after {
 	position: absolute;
-	background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cpath fill='%23b8a974' d='M16 7H9V0H7v7H0v2h7v7h2V9h7z'/%3E%3C/svg%3E") 12px 5px no-repeat; 
-}
+	top: 0;
+	left: 0;
+	width: 355px;
+	height: 2px;
+	background-color: #000000;
 
-.menu-navigation:nth-child(2) a {
-	margin-right: 14px;
-
-}
-
-.menu-navigation:nth-child(3) a {
-	margin-right: 88px;
 
 }
 
@@ -242,14 +266,24 @@ a {
 
 .user-navigation input[type="search"]:focus+input[type="submit"] {
 	visibility: visible;
-	border: 1px solid #000000;
+	border: 2px solid #000000;
+	border-bottom: none;
+}
+
+
+.item-navigation-form:focus-within {
+	margin-top: -2px;
+	border-bottom: 2px solid #000000;
 }
 
 .user-navigation input[type="submit"]:hover {
 	color: #ffffff;
 	background-color: #000000;
 }
-.user-navigation input[type="submit"]:active {
+
+
+
+.user-navigation input[type="submit"]:active {ц
 	color: #4d4d4d;
 }
 
@@ -262,6 +296,47 @@ a {
 .user-navigation li,
 .site-navigation li {
 	margin-right: 20px;
+
+}
+
+.site-navigation {
+	margin-top: 15px;
+	padding-top: 2px;
+
+}
+
+.menu-navigation>a {
+	font: 800 18px/1.33 'Gilroy', Qanelas, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 3.6px;
+}
+
+.menu-navigation:first-child a:nth-child(1) {
+	padding-left: 3px;
+	margin-right: 302px;
+
+}
+
+
+.plus-link {
+	position: relative;
+}
+
+.plus-link::after {
+	content:"";
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cpath fill='%23b8a974' d='M16 7H9V0H7v7H0v2h7v7h2V9h7z'/%3E%3C/svg%3E") 12px 5px no-repeat; 
+}
+
+.menu-navigation:nth-child(2) a {
+	margin-right: 14px;
+
+}
+
+.menu-navigation:nth-child(3) a {
+	margin-right: 88px;
 
 }
 
@@ -323,9 +398,14 @@ a {
 	margin-top: 36px;
 	box-sizing: border-box; 
 	border-top: 7px solid transparent;
+	border-left: 0;
 	-moz-border-image: -moz-linear-gradient(to right,  #ffffff 0px, #ffffff 100px, transparent 100px, transparent 100%);
 	-webkit-border-image: -webkit-linear-gradient(to right,  #ffffff 0px, #ffffff 100px, transparent 100px, transparent 100%);
+	-o-border-image: -webkit-linear-gradient(to right,  #ffffff 0px, #ffffff 100px, transparent 100px, transparent 100%);
 	border-image: linear-gradient(to right, #ffffff 0px, #ffffff 100px, transparent 100px, transparent 100%);
+	-moz-border-image-slice: 1;
+	-webkit-border-image-slice: 1;
+	-o-border-image-slice: 1;
 	border-image-slice: 1;
 }
 
@@ -678,10 +758,17 @@ input[type="radio"] {
 .contacts {
 	box-sizing: border-box;
 	padding-top: 8px;
-	border-top: 7px solid transparent;
-	-moz-border-image: -moz-linear-gradient(to right,  #000000 0px, #000000 83px, #ffffff 83px, #ffffff 100%);
-	-webkit-border-image: -webkit-linear-gradient(to right,  #000000 0px, #000000 83px, #ffffff 83px, #ffffff 100%);
-	border-image: linear-gradient(to right, #000000 0px, #000000 83px, #ffffff 83px, #ffffff 100%);
+	border-top-width: 7px;
+	border-top-style: solid;
+	border-top-color: transparent;
+	border-bottom-width: 0;
+	-moz-border-image: -moz-linear-gradient(to right,  transparent 0px, transparent 4px, #000000 4px, #000000 83px, #ffffff 83px, #ffffff 100%);
+	-webkit-border-image: -webkit-linear-gradient(to right,   transparent 0px, transparent 4px, #000000 4px,  #000000 83px, #ffffff 83px, #ffffff 100%);
+	-o-border-image: -o-linear-gradient(to right,  transparent 0px, transparent 7px, #000000 4px, #000000 83px, #ffffff 83px, #ffffff 100%);
+	border-image: linear-gradient(to right, transparent 4px, #000000 4px, #000000 83px, #ffffff 83px, #ffffff 100%);
+	-moz-border-image-slice: 1;
+	-webkit-border-image-slice: 1;
+	-o-border-image-slice: 1;
 	border-image-slice: 1;
 }
 

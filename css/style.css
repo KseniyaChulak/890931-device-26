@@ -355,16 +355,21 @@ a {
 }
 
 .sub-menu { 
-	position: absolute;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	width: 650px;
-	height: 125px;
+	position: absolute;
+	left: 1px;
+	width: 1160px;
+	height: 160px;
 	padding-top: 17px;
+	padding-bottom: 30px;
+	padding-right: 440px;
+	padding-left: 58px;
 	box-sizing: border-box;
 	z-index: 10;
 	display: none;
+	background-color: #f7e296;
 }
 
 .sub-menu li {

@@ -1583,6 +1583,8 @@ input[type="radio"]:disabled + label{
 
 
 
+
+
 .catalog-items .catalog-list {
 	display: flex;
 	flex-direction: row;
@@ -1650,6 +1652,25 @@ input[type="radio"]:disabled + label{
 
 }
 
+.basket-link .new-item:after {
+	content: "new";
+	position: absolute;
+	top: 28px;
+	right: 27px;
+	display: inline-block;
+	text-align: center;
+	width: 60px; 
+	height: 60px;
+	font: 800 14px/1.71 'Gilroy', Qanelas, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 0.7px;
+	line-height: 60px; 
+	color: #bebebe;
+	border: 1px solid #bfbfbf;
+	border-radius: 50%;
+
+}
+
 .hidden-path-basket {
 	position: absolute;
 	top: 50%;
@@ -1682,7 +1703,7 @@ input[type="radio"]:disabled + label{
 	display: block;
 	width: 200px;
 	font: 300 13px/1.53 'Open Sans', Arial, sans-serif;
-	color: #909090;
+	color: #777777;
 	letter-spacing: 0.13;
 	padding-left: 29px;
 	box-sizing: border-box;

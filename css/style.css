@@ -1220,19 +1220,51 @@ input[type="radio"] {
 }
 
 .filter {
-	min-width: 468px;
+	position: relative; 
+	width: 468px;
+	min-height: 1286px;
 	background-color: #eeeeee;
+	box-sizing: border-box;
 	
 }
 
+.filter::before {
+	content: "";
+	position: absolute;
+	width: 3600px;
+	height: 1360px;
+	background: linear-gradient(to bottom #dcdcdc, #dcdcdc 70px, #eeeeee 70px, #eeeeee 100%);
+	z-index: -1;
+	right: 0;
+	box-sizing: border-box;
+}
+
+
+
+
+
 .sort {
+	position: relative;
 	display: flex;
 	flex-direction: row;
 	background-color: #ebebeb;
 	padding-left: 72px;
-	min-width: 972px;
+	width: 970px;
 	box-sizing: border-box;
 
+}
+
+.sort::after {
+	content: "";
+	position: absolute;
+	width: 3600px;
+	height: 70px;
+	background-color: #ebebeb;
+	top: 0;
+	left: 970px;
+	z-index: -1;
+	border: 1px solid black;
+	box-sizing: border-box;
 }
 
 .filter h2,
@@ -1569,6 +1601,7 @@ input[type="radio"]:disabled + label{
 
 
 .catalog-items {
+	width: 832px;
 	margin-top: 69px;
 	margin-left: 72px;
 	box-sizing: border-box;

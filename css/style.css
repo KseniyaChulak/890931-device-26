@@ -1227,7 +1227,7 @@ input[type="radio"] {
 	box-sizing: border-box;
 	
 }
-
+/*выравнивание*/
 .filter::before {
 	content: "";
 	position: absolute;

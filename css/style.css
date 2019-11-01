@@ -1,31 +1,31 @@
 @font-face { 
   font-family: Gilroy; 
-  src: url('gilroyextrabold.woff2') format('woff2'), 
-       url('gilroyextrabold.woff') format('woff'); 
+  src: url("gilroyextrabold.woff2") format("woff2"), 
+       url("gilroyextrabold.woff') format('woff"); 
   font-weight: 800; 
   font-style: normal; 
 }
 
 @font-face { 
   font-family: Gilroy; 
-  src: url('gilroylight.woff2') format('woff2'), 
-       url('gilroylight.woff') format('woff'); 
+  src: url("gilroylight.woff2") format("woff2"), 
+       url("gilroylight.woff") format("woff"); 
   font-weight: 400; 
   font-style: normal; 
 }
 
 @font-face { 
-  font-family: 'Open Sans'; 
-  src: url('opensanslight.woff2') format('woff2'), 
-       url('opensanslight.woff') format('woff'); 
+  font-family: "Open Sans"; 
+  src: url("opensanslight.woff2") format("woff2"), 
+       url("opensanslight.woff") format("woff"); 
   font-weight: 300; 
   font-style: normal;
 }
 
 @font-face { 
-  font-family: 'Open Sans'; 
-  src: url('opensans.woff2') format('woff2'), 
-       url('opensans.woff') format('woff'); 
+  font-family: "Open Sans"; 
+  src: url("opensans.woff2") format("woff2"), 
+       url("opensans.woff") format("woff"); 
   font-weight: normal; 
   font-style: normal;
  }
@@ -33,7 +33,7 @@
 body {
 	margin: 0;
 	padding: 0;
-  	font: 300 15px/2 'Open Sans', Arial, sans-serif;
+  	font: 300 15px/2 "Open Sans", Arial, sans-serif;
   	letter-spacing: 0.15px;
   	color: #000000;
   	background-color: #ffffff;
@@ -54,24 +54,8 @@ a {
 }	
 
 
-.button {
-	width: 55px;
-	height: 55px;
-	border: none;
-	line-height: 55px;
-	text-align: center;
-	vertical-align: middle;
-}
 
 
-.button:hover path {
-	fill: #f0c52e;
-}
-
-
-.button:active path {
-	fill: #faedc0;
-}
 
 .container {
 	margin: 40px auto;
@@ -118,7 +102,7 @@ a {
 .user-navigation button[type="submit"] {
 	margin: 0;
 	padding: 0;
-	font: 300 15px/2 'Open Sans', Arial, sans-serif;
+	font: 300 15px/2 "Open Sans", Arial, sans-serif;
 	letter-spacing: 0.15px;
 	background-color: inherit;
 }
@@ -320,7 +304,7 @@ a {
 }
 
 .menu-navigation>a {
-	font: 800 18px/1.33 'Gilroy', Qanelas, sans-serif;
+	font: 800 18px/1.33 "Gilroy", Qanelas, sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 3.6px;
 }
@@ -337,7 +321,7 @@ a {
 }
 
 .plus-link::after {
-	content:"";
+	content: "";
 	width: 30px;
 	height: 30px;
 	position: absolute;
@@ -377,7 +361,7 @@ a {
 
 }
 .sub-menu a {
-	font: 300 15px/2.4 'Open Sans', Arial, sans-serif;
+	font: 300 15px/2.4 "Open Sans", Arial, sans-serif;
 	letter-spacing: 0.15px;
 	display: block;
 	width: 180px;
@@ -418,7 +402,7 @@ a {
 .preview-container::before {
 	content: "01";
 	position: absolute;
-	font: 800 179.2px/1 'Gilroy', Qanelas, sans-serif;
+	font: 800 179.2px/1 "Gilroy", Qanelas, sans-serif;
 	color: #ffffff;
 	letter-spacing: 1.792px;
 	top: -15px;
@@ -467,7 +451,7 @@ a {
 
 
 .slide-item h2 {
-	font: 800 47px/1.19 'Gilroy', Qanelas, sans-serif;
+	font: 800 47px/1.19 "Gilroy", Qanelas, sans-serif;
 	letter-spacing: 0.47px;
 	padding-bottom: 5px;
 	margin-bottom: 8px;
@@ -495,7 +479,7 @@ a {
 }
 
 .btn {
-	font: 800 18px/2.22 'Gilroy', Qanelas, sans-serif;
+	font: 800 18px/2.22 "Gilroy", Qanelas, sans-serif;
 	color: #000000;
 	display: block;
 	width: 220px;
@@ -557,7 +541,7 @@ a {
 }
 
 .table-item:first-child td {
-	font: 36px/1.33 'Gilroy', Qanelas, sans-serif;
+	font: 36px/1.33 "Gilroy", Qanelas, sans-serif;
 	padding-top: 50px;
 	padding-right: 77px;
 	padding-bottom: 7px;
@@ -570,7 +554,7 @@ a {
 
 
 .preivew-table td {
-	font: 300 13px/1.53 'Open Sans', Arial, sans-serif;
+	font: 300 13px/1.53 "Open Sans", Arial, sans-serif;
 }
 
 .preivew-items ul,
@@ -632,7 +616,7 @@ a {
 
 
 .popular-link span {
-	font: 800 18px/1.33 'Gilroy', Qanelas, sans-serif;
+	font: 800 18px/1.33 "Gilroy", Qanelas, sans-serif;
 	letter-spacing: 0.18px;
 	color: #000000;
 	position: absolute;
@@ -660,14 +644,20 @@ input[type="radio"] {
 	width: 260px;
 }
 
+.additional-information-container {
+	width: 100%;
+	min-height: 389px;
+	background: linear-gradient(to bottom, #ffffff 0, #ffffff 100px, #e5e5e5 100px, #e5e5e5 288px);
+
+}
+
 .additional-information {
 	display: flex;
 	flex-direction: row;
+	width: 1160px;
+	margin: 46px auto;
 	box-sizing: border-box;
-	min-height: 389px;
-	padding-left: 140px;
-	padding-right: 140px;
-	margin-top: 46px;
+	height: 389px;
 	background: linear-gradient(to bottom, #ffffff 0, #ffffff 100px, #e5e5e5 100px, #e5e5e5 288px);
 }
 
@@ -701,7 +691,7 @@ input[type="radio"] {
 .additional-item h3,
 .about-us h2,
 .contacts h2 {
-	font: 800 47px/1.02 'Gilroy', Qanelas, sans-serif;
+	font: 800 47px/1.02 "Gilroy", Qanelas, sans-serif;
 	letter-spacing: 0.47px;
 
 }
@@ -717,6 +707,13 @@ input[type="radio"] {
 	width: 277px; 
 }	
 
+.additional-information .active-item {
+	background: linear-gradient(to bottom, #000000 0%, #000000 100%);
+	color: #f7e184;
+	width: 277px; 
+
+}
+
 .additional-item {
 	box-sizing: border-box;
 	padding-top: 29px;
@@ -726,17 +723,17 @@ input[type="radio"] {
 }
 
 .additional-information .additional-item:nth-of-type(1) {
-	background: url('../img/additional-information/delivery.svg') 673px 86px no-repeat;
+	background: url("../img/additional-information/delivery.svg") 673px 86px no-repeat;
 
 }
 
 .additional-information .additional-item:nth-of-type(2) {
-	background: url('../img/additional-information/warranty.svg') 673px 86px no-repeat;
+	background: url("../img/additional-information/warranty.svg") 673px 86px no-repeat;
 
 }
 
 .additional-information .additional-item:nth-of-type(3) {
-	background: url('../img/additional-information/credit.svg') 673px 86px no-repeat;
+	background: url("../img/additional-information/credit.svg") 673px 86px no-repeat;
 
 }
 
@@ -857,7 +854,7 @@ input[type="radio"] {
 }
 
 .about-us-list li {
-	font: 800 16px/2.5 'Gilroy', Qanelas, sans-serif;
+	font: 800 16px/2.5 "Gilroy", Qanelas, sans-serif;
 }
 
 .about-us .btn {
@@ -889,12 +886,12 @@ input[type="radio"] {
 }
 
 .visually-hidden label {
-	font: 800 18px/1.33 'Gilroy', Qanelas, sans-serif;
+	font: 800 18px/1.33 "Gilroy", Qanelas, sans-serif;
 }
 
 .visually-hidden input,
 .visually-hidden textarea {
-	font: 14px/1.33 'Open Sans', Arial, sans-serif;
+	font: 14px/1.33 "Open Sans", Arial, sans-serif;
 }
 
 
@@ -1021,7 +1018,7 @@ input[type="radio"] {
 
 .footer-middle a:not(.telefon) {
 	color: #ffffff;
-	font: 800 18px/1.33 'Gilroy', Qanelas, sans-serif;
+	font: 800 18px/1.33 "Gilroy", Qanelas, sans-serif;
 	letter-spacing: 3.6px;
 	text-transform: uppercase;
 }
@@ -1152,7 +1149,7 @@ input[type="radio"] {
 }
 
 .catalog-item h1 {
-	font: 800 47px/1.02 'Gilroy', Qanelas, sans-serif;
+	font: 800 47px/1.02 "Gilroy", Qanelas, sans-serif;
 	letter-spacing: 0.47px;
 	padding-left: 62px;
 	margin-top: 11px;
@@ -1171,7 +1168,7 @@ input[type="radio"] {
 .breadcrumbs {
 	display: flex;
 	justify-content: space-between;
-	font: 300 14px/1.71 'Open Sans', Arial, sans-serif;
+	font: 300 14px/1.71 "Open Sans", Arial, sans-serif;
 	letter-spacing: 0.14px;
 	width: 383px;
 	margin-left: 61px;
@@ -1193,7 +1190,7 @@ input[type="radio"] {
 	right: -20px;
 	width: 4px;
 	height: 7px;
-	background: url('../img/svg-device/nav-arrow.svg') no-repeat;
+	background: url("../img/svg-device/nav-arrow.svg") no-repeat;
 
 }
 
@@ -1203,17 +1200,17 @@ input[type="radio"] {
 
 }
 
-.alignment {
-	margin-top: 69px;
-	margin-left: 185px;
 
-}
 
 .wrapper-main-page-catalog {
+	width: 1440px;
+	margin: 48px auto;
+	margin-bottom: 0;
 	display: flex;
 	flex-direction: row;
-	margin-top: 48px;
+	box-sizing: border-box;
 }
+
 
 .wrraper-center-page-catalog {
 	margin-bottom: 75px;
@@ -1222,24 +1219,31 @@ input[type="radio"] {
 .filter {
 	position: relative; 
 	width: 468px;
-	min-height: 1286px;
 	background-color: #eeeeee;
-	box-sizing: border-box;
 	
 }
+
 /*выравнивание*/
+
 .filter::before {
 	content: "";
 	position: absolute;
 	width: 3600px;
-	height: 1360px;
-	background: linear-gradient(to bottom #dcdcdc, #dcdcdc 70px, #eeeeee 70px, #eeeeee 100%);
+	height: 1287px;
+	background: linear-gradient(to bottom, #dcdcdc 0, #dcdcdc 70px, #eeeeee 70px, #eeeeee 1287px);
+	top: 0;
+	right: 468px;
 	z-index: -1;
-	right: 0;
 	box-sizing: border-box;
 }
 
 
+.alignment {
+	width: 281px;
+	float: right;
+	margin-top: 69px;
+
+}
 
 
 
@@ -1249,8 +1253,9 @@ input[type="radio"] {
 	flex-direction: row;
 	background-color: #ebebeb;
 	padding-left: 72px;
-	width: 970px;
+	width: 972px;
 	box-sizing: border-box;
+		
 
 }
 
@@ -1259,17 +1264,18 @@ input[type="radio"] {
 	position: absolute;
 	width: 3600px;
 	height: 70px;
-	background-color: #ebebeb;
+	background-color: #eeeeee;
 	top: 0;
-	left: 970px;
-	z-index: -1;
-	border: 1px solid black;
+	left: 972px;
 	box-sizing: border-box;
+	z-index: -1;
 }
+
+
 
 .filter h2,
 .sort h2 {
-	font: 800 16px/4.37 'Gilroy', Qanelas, sans-serif;
+	font: 800 16px/4.37 "Gilroy", Qanelas, sans-serif;
 	letter-spacing: 3.6px;
 	text-transform: uppercase;	
 	
@@ -1285,10 +1291,17 @@ input[type="radio"] {
 
 
 .filter h2 {
+	width: 468px;
 	background-color: #dbdbdb;
-	padding-left: 200px;
-	
+	box-sizing: border-box;
 } 
+
+.filter span {
+	width: 268px;
+	float: right;
+	
+}
+
 .filter h2,
 .sort {
 	min-height: 70px;
@@ -1305,7 +1318,7 @@ input[type="radio"] {
 }
 
 .sort-1 {
-	min-width: 300px;
+	width: 300px;
 	margin-right: 215px;
 
 }
@@ -1317,7 +1330,7 @@ input[type="radio"] {
 
 .sort-item a {
 	display: block;
-	font: 14px/1.28px 'Open Sans', Arial, sans-serif;
+	font: 14px/1.28px "Open Sans", Arial, sans-serif;
 	color: #b2b2b2;
 	line-height: 70px;
 } 
@@ -1377,13 +1390,13 @@ input[type="radio"] {
 	padding: 0;
 	padding-top: 10px;
 	box-sizing: border-box;
-	font: 800 18px/1.33 'Gilroy', Qanelas, sans-serif;
+	font: 800 18px/1.33 "Gilroy", Qanelas, sans-serif;
 	letter-spacing: 0.18px;
 	
 }
 
 fieldset.price {
-	font: 800 18px/1.33 'Gilroy', Qanelas, sans-serif;
+	font: 800 18px/1.33 "Gilroy", Qanelas, sans-serif;
 	margin-bottom: 31px; 
 }
 
@@ -1403,7 +1416,7 @@ fieldset.price {
 	
 	position: absolute;
 	bottom: -30px;
-	font: 300 14px/1.71 'Gilroy', Qanelas, sans-serif;
+	font: 300 14px/1.71 "Gilroy", Qanelas, sans-serif;
 }
 
 .price label::before {
@@ -1436,7 +1449,7 @@ fieldset.price {
 	-webkit-appearance: none;
 	width: 20px;
 	height: 23px;
-	background: url('../img/svg-device/filter-button.svg') no-repeat;
+	background: url("../img/svg-device/filter-button.svg") no-repeat;
 	top: -9px;
 	left: -10px;
 	cursor: pointer;
@@ -1454,7 +1467,7 @@ fieldset.price {
 .range2::-webkit-slider-thumb:hover {
 	width: 22px;
 	height: 25px;
-	background: url('../img/svg-device/filter-button.svg') no-repeat;	
+	background: url("../img/svg-device/filter-button.svg") no-repeat;	
 	box-shadow: none;
 }
 
@@ -1488,7 +1501,7 @@ fieldset.bluetooth {
 
 .color label,
 .bluetooth label {
-	font: 300 14px/2.85 'Open Sans', Arial, sans-serif;
+	font: 300 14px/2.85 "Open Sans", Arial, sans-serif;
 	letter-spacing: 0.14px;
 	line-height: 40px;
 	vertical-align: middle;
@@ -1630,7 +1643,7 @@ input[type="radio"]:disabled + label{
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	min-width: 832px;
+	
 
 }
 
@@ -1651,25 +1664,31 @@ input[type="radio"]:disabled + label{
 
 .card-item a {
 	display: inline-block;
-	font: 800 18px/1.33 'Gilroy', Qanelas, sans-serif;
+	font: 800 18px/1.33 "Gilroy", Qanelas, sans-serif;
 	letter-spacing: 0.18px;
 	color: #000000;
 	width: 254px;
 	padding: 0;
+	vertical-align: middle;
 	white-space: nowrap;
+
 }
 
 
 .card-item span {
-	display: block;
-	font: 16px/1.5 'Gilroy', Qanelas, sans-serif;
-	letter-spacing: 0.16px;
-	color: #000000;
-	padding: 0;
-	padding-top: 2px;
+	display: inline-block;
+	vertical-align: middle;
+	font: 300 16px/1.5 "Gilroy'", Qanelas, sans-serif;
+	padding-top: 1px;
+	color: #464646;
+	letter-spacing: 0.016px;
+	margin-right: -3px;
 
+	
 
 }
+
+
 
 .item-img {
 	order: 1;
@@ -1697,9 +1716,10 @@ input[type="radio"]:disabled + label{
 	right: 27px;
 	display: inline-block;
 	text-align: center;
+	vertical-align: middle;
 	width: 60px; 
 	height: 60px;
-	font: 800 14px/1.71 'Gilroy', Qanelas, sans-serif;
+	font: 800 14px/1.71 "Gilroy", Qanelas, sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 0.7px;
 	line-height: 60px; 
@@ -1723,7 +1743,7 @@ input[type="radio"]:disabled + label{
 }
 
 .hidden-path-basket .btn {
-	font: 800 18px/2.22 'Gilroy', Qanelas, sans-serif;
+	font: 800 18px/2.22 "Gilroy", Qanelas, sans-serif;
 	color: #000000;
 	display: block;
 	width: 200px;
@@ -1740,7 +1760,7 @@ input[type="radio"]:disabled + label{
 .hidden-path-basket .add-to-campare {
 	display: block;
 	width: 200px;
-	font: 300 13px/1.53 'Open Sans', Arial, sans-serif;
+	font: 300 13px/1.53 "Open Sans", Arial, sans-serif;
 	color: #777777;
 	letter-spacing: 0.13;
 	padding-left: 29px;
@@ -1811,7 +1831,7 @@ input[type="radio"]:disabled + label{
 
 .item-list-pager a {
 	display: block;
-	font: 800 16px/1.5 'Gilroy', Qanelas, sans-serif;
+	font: 800 16px/1.5 "Gilroy", Qanelas, sans-serif;
 	color: #c5c5c5;
 	letter-spacing: 3.2px;
 	text-transform: uppercase;
@@ -1875,6 +1895,7 @@ input[type="radio"]:disabled + label{
 .pager-previous a,
 .pager-next a {
 	display: inline-block;
+	vertical-align: middle;
 	height: 70px;
 	line-height: 70px;
 	padding-left: 30px;
@@ -1919,6 +1940,163 @@ input[type="radio"]:disabled + label{
 	margin-left: 22px;
 
 } 
+
+/* Всплывающая форма */
+
+
+.button {
+	position: relative;
+	width: 55px;
+	height: 55px;
+	border-radius: 50%;
+	border: none;
+	background-color: #f7e296;
+	cursor: pointer; 
+}
+
+
+
+.button::before,
+.button::after {
+  content: "";
+  position: absolute;
+  top: 25px;
+  right: 12px;
+  width: 30px;
+  height: 2px;
+  background-color: #ffffff;
+}
+
+.button::before {
+  transform: rotate(45deg);
+}
+
+
+.button::after {
+  transform: rotate(-45deg);
+}
+
+
+.modal {
+	position: fixed;
+	color: #000000;
+	background-color: #ffffff;
+	box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+	box-sizing: border-box;
+}
+
+.modal-login {
+	display: none;
+	width: 960px;
+	left: 50%;
+	margin-left: -480px;
+	bottom: 1210px;
+	/*top: 50%;
+	margin-top: -226px;*/
+	padding: 80px 100px;
+	z-index: 200;
+
+
+}
+
+.modal-login-form {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+}
+.modal-login-form p {
+	display: flex;
+	flex-direction: column;
+
+}
+
+.modal-login-form label {
+	font: 800 18px/1.33 "Gilroy", Qanelas, sans-serif;
+
+}
+
+.modal-login-form input[type="text"],
+.modal-login-form input[type="email"],
+.modal-login-form textarea {
+	width: 360px;
+	font: 400 14px/1.28 "Open Sans", Arial, sans-serif;
+	color: #adadad;
+	background-color: #f2f2f2;
+	padding: 21px 16px;
+	box-sizing: border-box;
+	border: none;
+}
+
+.modal-login-form input[type="text"] {
+	margin-right: 40px;
+
+}
+
+.modal-login-form textarea {
+	width: 760px;
+	height: 156px;
+	outline: none;
+	margin-bottom: 30px;
+}
+
+.modal-login-form .btn {
+	border: none;
+
+}
+
+/*.modal-login-form textarea::placeholder,
+.modal-login-form textarea::-moz-placeholder,
+.modal-login-form textarea::-webkit-input-placeholder {
+	color: #adadad;
+
+}*/
+
+.modal-map {
+	display: none;
+	bottom: 384px;
+	width: 960px;
+	left: 50%;
+	margin-left: -480px;
+	z-index: 300;
+}
+
+.modal-map img {
+	margin-bottom: -9px;
+
+}
+
+.modal-map .button, 
+.modal-login .button {
+	position: absolute;
+	top: 23px;
+	right: 22px;
+	outline: none;
+
+}
+
+
+
+.button:hover  {
+	background-color: #f0c52e;
+}
+
+
+.button:active {
+	background-color: #faedc0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -30,6 +30,7 @@
   font-style: normal;
  }
 
+
 body {
 	margin: 0;
 	padding: 0;
@@ -40,6 +41,10 @@ body {
   	width: 100%;
   	overflow-x: hidden;
 }
+
+	
+
+
 
 
 a {
@@ -82,8 +87,8 @@ a {
 
 .header-logo {
 	position: absolute;
-	top: -19px;
-	left: 62px;
+	top: -17px;
+	left: 59px;
 }
 
 .header-logo:hover path {
@@ -96,7 +101,8 @@ a {
 
 .item-navigation-form {
 	position: relative;
-	top: -5px;
+	top: -6px;
+	left: -2px;
 	border: none;
 	
 }
@@ -117,7 +123,7 @@ a {
 	outline: none;
 	box-shadow: none;
 	padding-left: 2px;
-	padding-right: 145px;
+	padding-right: 142px;
 	
 	
 }
@@ -131,12 +137,16 @@ a {
 	
 } 
 .item-navigation a {
+	display: inline-block;
+	vertical-align: top;
 	letter-spacing: 0.15px;
+	margin-top: -1px;
 
 }
 
 .item-navigation:nth-child(1) {
-	margin-right: 100px;
+	margin-right: 118px;
+	
 }
 
 .item-navigation:nth-child(2) {
@@ -149,8 +159,8 @@ a {
 
 
 .item-navigation .icon-user-nav {
-	padding-right: 12px;
-
+	padding-right: 13px;
+	
 }
 
 .item-navigation:first-child .icon-user-nav:nth-of-type(1) {
@@ -313,7 +323,7 @@ a {
 }
 
 .menu-navigation:first-child a:nth-child(1) {
-	padding-left: 3px;
+	padding-left: 1px;
 	margin-right: 302px;
 
 }
@@ -398,7 +408,6 @@ a {
 .preview-container {
 	position: relative;
 	top: -111px;
-	padding-left: 2px;
 	z-index: 5;
 }
 
@@ -409,7 +418,7 @@ a {
 	color: #ffffff;
 	letter-spacing: 1.792px;
 	top: -15px;
-	right: 43px;
+	right: 46px;
 }
 
 
@@ -456,9 +465,9 @@ a {
 .slide-item h2 {
 	font: 800 47px/1.19 "Gilroy", Qanelas, sans-serif;
 	letter-spacing: 0.47px;
-	padding-bottom: 5px;
-	margin-bottom: 8px;
-	margin-top: 38px;
+	padding-bottom: 4px;
+	margin-bottom: 1px;
+	margin-top: 37px;
 }
 
 .slide-item img {
@@ -491,6 +500,7 @@ a {
 	text-align: center;
 	text-transform: uppercase;
 	background: linear-gradient(to bottom, transparent 0%, transparent 40%, #f0c52e 40%, #f0c52e 60%, transparent 60%, transparent 100%);
+	box-sizing: border-box;
 }
 
 .btn:hover {
@@ -515,7 +525,7 @@ a {
 .btn-toggle li {
 	width: 12px;
 	height: 40px;
-	margin-right: 21px;
+	margin-right: 20px;
 }
 
 .btn-toggle li:nth-child(2),
@@ -545,13 +555,13 @@ a {
 
 .table-item:first-child td {
 	font: 36px/1.33 "Gilroy", Qanelas, sans-serif;
-	padding-top: 50px;
+	padding-top: 48px;
 	padding-right: 77px;
 	padding-bottom: 7px;
 }
 
 .table-item:first-child td:nth-child(2) {
-	padding-right: 74px;
+	padding-right: 75px;
 
 }
 
@@ -662,13 +672,14 @@ input[type="radio"] {
 	box-sizing: border-box;
 	height: 389px;
 	background: linear-gradient(to bottom, #ffffff 0, #ffffff 100px, #e5e5e5 100px, #e5e5e5 288px);
+
 }
 
 
 .information-list {
 	display: flex;
 	flex-direction: column;
-	min-width: 281px;
+	width: 280px;
 	height: 319px;
 	box-sizing: border-box;
 	border-right: 7px solid black;
@@ -677,11 +688,12 @@ input[type="radio"] {
 
 .information-list li:first-child {
 	margin-top: 82px;
+	margin-left: -3px;
 
 }
 
 .information-list .btn {
-	margin-bottom: 24px;
+	margin-bottom: 25px;
 
 }
 
@@ -701,25 +713,29 @@ input[type="radio"] {
 
 .additional-information .btn {
 	width: 160px;
-	margin-left: -3px;
+	margin-left: -2px;
 }
 
 .additional-information .btn:active {
 	background: linear-gradient(to bottom, #000000 0%, #000000 100%);
 	color: #f7e184;
 	width: 277px; 
+	text-align: left;
+	padding-left: 18px;
 }	
 
 .additional-information .active-item {
 	background: linear-gradient(to bottom, #000000 0%, #000000 100%);
 	color: #f7e184;
 	width: 277px; 
-
+	text-align: left;
+	padding-left: 18px;
+	box-sizing: border-box;
 }
 
 .additional-item {
 	box-sizing: border-box;
-	padding-top: 29px;
+	padding-top: 28px;
 	padding-left: 116px;
 	padding-bottom: 29px;
 	width: 875px;
@@ -742,7 +758,7 @@ input[type="radio"] {
 
 
 .additional-item h3 {
-	margin-bottom: 32px;
+	margin-bottom: 31px;
 
 }
 
@@ -830,18 +846,20 @@ input[type="radio"] {
 
 .about-us h2,
 .contacts h2 {
-	margin-bottom: 45px;
+	margin-bottom: 42px;
 	margin-left: -2px;
 	
 }
 
 .about-us p:nth-of-type(1) {
-	margin-bottom: 29px;
+	margin-bottom: 30px;
+	margin-left: -1px;
 }
 
 .about-us p:nth-of-type(2) {
 	letter-spacing: -0.2px;
-	margin-bottom: 65px;
+	margin-bottom: 66px;
+	margin-left: -1px;
 }
 
 
@@ -850,8 +868,7 @@ input[type="radio"] {
 	content: "";
 	width: 12px;
 	height: 12px;
-	padding-right: 35px;
-	margin-left: 3px;	
+	padding-right: 35px;	
 	background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 25 25'%3E%3Cpath d='M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z' fill='%23e6e6e6'/%3E%3C/svg%3E") 0 50% no-repeat;
 
 }
@@ -867,19 +884,17 @@ input[type="radio"] {
 
 .contacts p {
 	padding-bottom: 23px;  
-
+	margin-left: -2px;
 }
 
-.contacts a {
-	margin-left: 2px;
 
-}
 
 .contacts .btn {
 
-	margin-top: 59px;
+	margin-top: 61px;
 
 }
+
 
 
 
@@ -960,25 +975,19 @@ input[type="radio"] {
 
 .footer-top-item {
 	box-sizing: border-box;
-	margin-top: -2px;
+	margin-top: -3px;
 	
 }
 
 .footer-top-list li:last-child {
-	margin-right: -2px;
-
+	margin-right: -1px;
+	margin-left: 42px;
 }
 
 .footer-top-list li:nth-child(2) {
-	margin-left: 44px;
+	margin-left: 45px;
 
 }
-
-.footer-top-list li:nth-child(3) {
-	margin-left: 42px;
-
-}
-
 
 .footer-top-item .footer-top-icon {
 	padding-right: 9px; 
@@ -998,17 +1007,20 @@ input[type="radio"] {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	margin-left: -1px;
 
 }
 
 .footer-middle-list {
 	display: flex;
 	flex-direction: row;
+
 }
 
 .footer-middle-list li {
 	padding-top: 24px;
 	margin-right: 34px;
+
 }
 
 
@@ -1016,7 +1028,7 @@ input[type="radio"] {
 	padding-top: 5px;
 	color: #ffffff;
 	letter-spacing: normal;
-
+	
 }
 
 .footer-middle a:not(.telefon) {
@@ -1024,10 +1036,11 @@ input[type="radio"] {
 	font: 800 18px/1.33 "Gilroy", Qanelas, sans-serif;
 	letter-spacing: 3.6px;
 	text-transform: uppercase;
+	margin-left: -2px;
 }
 
 .footer-middle .telefon {
-	margin-right: -2px;
+	
 	padding-top: 20px;
 	color: #ffffff;
 	letter-spacing: normal;
@@ -1049,7 +1062,7 @@ input[type="radio"] {
 
 .group-social {
 	padding-top: 47px;
-	padding-right: 36px;
+	padding-right: 41px;
 
 }
 
@@ -1084,7 +1097,7 @@ input[type="radio"] {
 }
 
 .logo-html svg {
-	margin-right: -2px;
+	
 	padding-top: 47px;
 }
 
@@ -1104,7 +1117,7 @@ input[type="radio"] {
 }
 
 .item-navigation-page-catalog:nth-child(1) {
-	margin-right: 100px;
+	margin-right: 116px;
 
 }
 
@@ -1154,7 +1167,7 @@ input[type="radio"] {
 .catalog-item h1 {
 	font: 800 47px/1.02 "Gilroy", Qanelas, sans-serif;
 	letter-spacing: 0.47px;
-	padding-left: 62px;
+	padding-left: 60px;
 	margin-top: 11px;
 	margin-bottom: 24px;
 	
@@ -1183,23 +1196,30 @@ input[type="radio"] {
 .breadcrumbs li {
 	position: relative;
 
-
 }
 
 .breadcrumbs li:not(:last-child)::after {
 	content: "";
 	position: absolute;
-	top: 10px;
-	right: -20px;
+	top: 8px;
+	right: -18px;
 	width: 4px;
 	height: 7px;
 	background: url("../img/svg-device/nav-arrow.svg") no-repeat;
+}
+
+.breadcrumbs li:nth-child(2)::after {
+	right: -19px;
 
 }
 
 
 .breadcrumbs a {
+	display: inline-block;
+	vertical-align: top;
 	color: #b2b2b2;
+	margin-top: -1px;
+	margin-left: -1px;
 
 }
 
@@ -1207,7 +1227,7 @@ input[type="radio"] {
 
 .wrapper-main-page-catalog {
 	width: 1440px;
-	margin: 48px auto;
+	margin: 46px auto;
 	margin-bottom: 0;
 	display: flex;
 	flex-direction: row;
@@ -1216,7 +1236,7 @@ input[type="radio"] {
 
 
 .wrraper-center-page-catalog {
-	margin-bottom: 75px;
+	margin-bottom: 77px;
 }
 
 .filter {
@@ -1244,7 +1264,7 @@ input[type="radio"] {
 .alignment {
 	width: 281px;
 	float: right;
-	margin-top: 69px;
+	margin-top: 68px;
 
 }
 
@@ -1306,7 +1326,7 @@ input[type="radio"] {
 
 .filter h2,
 .sort {
-	min-height: 70px;
+	height: 70px;
 
 }
 
@@ -1321,21 +1341,31 @@ input[type="radio"] {
 
 .sort-1 {
 	width: 300px;
-	margin-right: 215px;
+	margin-right: 214px;
 
 }
 
 .sort-1 li:first-child {
-	margin-left: 10px;
+	margin-left: 11px;
 
 }
 
 .sort-item a {
-	display: block;
+	display: inline-block;
+	vertical-align: middle;
 	font: 14px/1.28px "Open Sans", Arial, sans-serif;
 	color: #b2b2b2;
 	line-height: 70px;
+	margin-top: -1px;
 } 
+
+
+.active-link-sort {
+	color: red;
+
+}
+
+
 
 .sort-item a:hover {
 	color: #666666;
@@ -1345,6 +1375,8 @@ input[type="radio"] {
 	color: #000000;
 
 }
+
+
 
 
 .sort-2 {
@@ -1390,16 +1422,26 @@ input[type="radio"] {
 	border-top: 2px solid black;
 	width: 200px;
 	padding: 0;
-	padding-top: 10px;
+	padding-top: 11px;
 	box-sizing: border-box;
 	font: 800 18px/1.33 "Gilroy", Qanelas, sans-serif;
 	letter-spacing: 0.18px;
 	
+	
 }
+
+.filter legend:nth-child(1) {
+	margin-left: -3px;
+	
+}
+
+
 
 fieldset.price {
 	font: 800 18px/1.33 "Gilroy", Qanelas, sans-serif;
-	margin-bottom: 31px; 
+	margin-bottom: 26px; 
+	margin-top: 1px;
+
 }
 
 .price legend {
@@ -1480,16 +1522,27 @@ fieldset.price {
 }
 
 fieldset.color {
-	padding-top: 19px;
-	margin-bottom: 24px;
+	padding-top: 17px;
+	margin-bottom: 23px;
 
 }
+fieldset.color legend {
+	padding-left: 2px;
+
+}
+
 
 fieldset.bluetooth {
 	padding-top: 18px;
 	padding-bottom: 60px;
 
+
 }
+
+fieldset.bluetooth legend {
+	padding-left: 2px;
+
+} 
 
 fieldset.color,
 fieldset.bluetooth {
@@ -1503,10 +1556,12 @@ fieldset.bluetooth {
 
 .color label,
 .bluetooth label {
+	display: inline-block;
 	font: 300 14px/2.85 "Open Sans", Arial, sans-serif;
 	letter-spacing: 0.14px;
 	line-height: 40px;
 	vertical-align: middle;
+	
 }
 
 .color label::before, 
@@ -1517,7 +1572,14 @@ fieldset.bluetooth {
 	height: 23px;
 	background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='23' height='23' viewBox='0 0 23 23'%3E%3Cpath d='M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z'/%3E%3C/svg%3E") no-repeat;
 	vertical-align: middle;
-	margin-right: 13px;
+	margin-right: 12px;
+	margin-left: -2px;
+	margin-top: -3px;
+}
+
+.bluetooth label::before {
+	margin-right: 14px;
+
 }
 
 input[type="checkbox"]:checked + label::before {
@@ -1629,8 +1691,8 @@ input[type="radio"]:disabled + label{
 
 .catalog-list .catalog-list-item:nth-child(3),
 .catalog-list .catalog-list-item:nth-child(4) {
-	margin-top: 33px;
-	margin-bottom: 21px;
+	margin-top: 31px;
+	margin-bottom: 18px;
 
 }
 
@@ -1680,14 +1742,9 @@ input[type="radio"]:disabled + label{
 .card-item span {
 	display: inline-block;
 	vertical-align: middle;
-	font: 300 16px/1.5 "Gilroy'", Qanelas, sans-serif;
-	padding-top: 1px;
+	font: 300 16px/1.5 "Gilroy", Qanelas, sans-serif;
 	color: #464646;
-	letter-spacing: 0.016px;
-	margin-right: -3px;
-
-	
-
+	letter-spacing: 0.16px;
 }
 
 
@@ -1848,7 +1905,7 @@ input[type="radio"]:disabled + label{
 	width: 122px;
 	justify-content: center;
 	box-sizing: border-box;
-	padding-top: 2px;
+	padding-top: 1px;
 	padding-left: 18px;
 }
 
@@ -1902,6 +1959,7 @@ input[type="radio"]:disabled + label{
 	line-height: 70px;
 	padding-left: 30px;
 	padding-right: 30px;
+	padding-top: 2px;
 
 
 }
@@ -1934,14 +1992,26 @@ input[type="radio"]:disabled + label{
 }
 
 .footer-top-list-page-catalog li:nth-child(4) {
-	margin-left: 42px;
+	margin-left: 46px;
 
 } 
+
+.footer-top-list-page-catalog li:nth-child(3) {
+	margin-left: 48px;
+
+} 
+
+
 
 .footer-top-list-page-catalog li:nth-child(2) {
 	margin-left: 22px;
 
 } 
+
+.footer-top-list-page-catalog .footer-top-icon {
+	margin-left: -4px;
+
+}
 
 /* Всплывающая форма */
 
@@ -1991,10 +2061,8 @@ input[type="radio"]:disabled + label{
 	display: none;
 	width: 960px;
 	left: 50%;
-	margin-left: -480px;
-	bottom: 1210px;
-	/*top: 50%;
-	margin-top: -226px;*/
+	top: 50%;
+	transform: translate(-50%, -50%);
 	padding: 80px 100px;
 	z-index: 200;
 
@@ -2056,10 +2124,10 @@ input[type="radio"]:disabled + label{
 
 .modal-map {
 	display: none;
-	bottom: 384px;
 	width: 960px;
 	left: 50%;
-	margin-left: -480px;
+	top: 50%;
+	transform: translate(-50%, -50%);
 	z-index: 300;
 }
 

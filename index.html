@@ -303,10 +303,11 @@
           </ul>
         </section>
     </div>
+    <div class="additional-information-container">
       <section class="additional-information">
         <h2 class="hide-text">Дополнительная информация</h2>
         <ul class="information-list">
-          <li class="btn"><input type="radio" checked>Доставка</li>
+          <li class="btn active-item"><input type="radio" checked>Доставка</li>
           <li class="btn"><input type="radio">Гарантия</li>
           <li class="btn"><input type="radio">Кредит</li>
         </ul>
@@ -329,6 +330,7 @@
           </p>
         </div>
       </section>
+    </div>
       <div class="container">
         <section class="company">
           <ul>
@@ -373,42 +375,10 @@
           <section class="contacts">
             <h2>Контакты</h2>
             <p>Вы можете забрать товар сами, заехав в наш офис. Заодно вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-            <a href="#">
+            <a href="map.html">
               <img src="img/footer/map.jpg" alt="Наше местоположение" width="560" height="222">
-            </a>
-            <section class="visually-hidden">
-              <img src="img/footer/map-big.jpg" alt="Наше местоположение улица Строителей, 15, г. Москва" width="960" height="559">
-              <button class="button" type="button">Закрыть
-              <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55">
-                <path fill="#f7e296" d="M27.5 0C12.312 0 0 12.312 0 27.5S12.312 55 27.5 55 55 42.688 55 27.5 42.688 0 27.5 0zm11.476 37.072l-1.486 1.426-9.99-9.574-9.987 9.574-1.488-1.426 9.988-9.573-9.987-9.573 1.487-1.425 9.987 9.573 9.988-9.573 1.487 1.425-9.989 9.574 9.99 9.572z"/>
-              </svg>
-              </button>
-            </section>
-            <a class="btn" href="#">Напишите нам</a>
-            <section class="visually-hidden">
-              <form action="https://echo.htmlacademy.ru" method="post">
-                <fieldset>
-                  <label for="user-name">Ваше имя:</label>
-                  <input id="user-name" type="text" name="user-name" placeholder="Имя Фамилия">
-                </fieldset>
-                <fieldset>
-                  <label for="user-email">Ваш e-mail:</label>
-                  <input id="user-email" type="email" name="user-email" placeholder="email@example.com">
-                </fieldset>
-                <fieldset>
-                  <label for="letter">Текст письма:</label>
-                  <textarea name="text" id="letter" cols="30" rows="10" placeholder="В свободной форме">
-                  </textarea>
-                </fieldset>
-                <button class="btn" type="submit">Отправить</button>
-                <button class="button" type="button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55">
-                  <desc>Закрыть</desc>
-                  <path fill="#f7e296" d="M27.5 0C12.312 0 0 12.312 0 27.5S12.312 55 27.5 55 55 42.688 55 27.5 42.688 0 27.5 0zm11.476 37.072l-1.486 1.426-9.99-9.574-9.987 9.574-1.488-1.426 9.988-9.573-9.987-9.573 1.487-1.425 9.987 9.573 9.988-9.573 1.487 1.425-9.989 9.574 9.99 9.572z"/>
-                </svg>
-                </button>
-              </form>
-            </section>
+            </a> 
+            <a class="btn" href="form.html">Напишите нам</a>
           </section>
         </div>
       </main>
@@ -491,7 +461,7 @@
             </div>
             <ul class="footer-html-">
               <li>
-                <a class="icon-social logo-html" href="#">
+                <a class="icon-social logo-html" href="https://htmlacademy.ru">
                   <svg xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09" viewBox="0 0 26.943 34.09">
                     <title>Лого академии</title>
                     <path fill="#FFC600" d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z"/>
@@ -502,5 +472,33 @@
           </div>
         </div>
     </footer>
+    <section class="modal modal-login">
+      <h2 class="hide-text">Напитише нам</h2>
+      <form class="modal-login-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="user-name">Ваше имя:</label>
+          <input id="user-name" type="text" name="user-name" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label for="user-email">Ваш e-mail:</label>
+          <input id="user-email" type="email" name="user-email" placeholder="email@example.com">
+        </p>
+        <p>
+          <label for="letter">Текст письма:</label>
+          <textarea name="text" id="letter" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+        </p>
+        <button class="btn" type="submit">Отправить</button>
+        <button class="button" type="button">
+          <span class="hide-text">Закрыть</span>
+        </button>
+      </form>
+    </section>
+    <section class="modal modal-map">
+      <h2 class="hide-text">Как до нас добраться</h2>
+        <img src="img/footer/map-big.jpg" alt="Наше местоположение улица Строителей, 15, г. Москва" width="960" height="559">
+      <button class="button" type="button">
+        <span class="hide-text">Закрыть</span>
+      </button>
+    </section>
   </body>
 </html>

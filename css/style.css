@@ -1522,8 +1522,8 @@ fieldset.price {
 }
 
 fieldset.color {
-	padding-top: 17px;
-	margin-bottom: 23px;
+	padding-top: 6px;
+	margin-bottom: 34px;
 
 }
 fieldset.color legend {
@@ -1551,7 +1551,8 @@ fieldset.bluetooth {
 }
 
 .color input[type="checkbox"] {
-	display: none;
+	visibility: hidden;
+
 }
 
 .color label,
@@ -1562,6 +1563,11 @@ fieldset.bluetooth {
 	line-height: 40px;
 	vertical-align: middle;
 	
+}
+
+.color label {
+	margin-bottom: -12px;
+
 }
 
 .color label::before, 
@@ -1619,7 +1625,7 @@ input[type="checkbox"]:checked:disabled + label::before {
 }
 
 .bluetooth input[type="radio"] {
-	display: none; 
+	visibility: hidden; 
 
 }
 
@@ -2058,7 +2064,7 @@ input[type="radio"]:disabled + label{
 }
 
 .modal-login {
-	display: none;
+	display: block;
 	width: 960px;
 	left: 50%;
 	top: 50%;

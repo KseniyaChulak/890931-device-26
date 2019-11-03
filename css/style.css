@@ -42,10 +42,6 @@ body {
   	overflow-x: hidden;
 }
 
-	
-
-
-
 
 a {
 	text-decoration: none;
@@ -60,10 +56,6 @@ a {
 	margin: 0;
 }	
 
-
-
-
-
 .container {
 	margin: 40px auto;
 	width: 1160px;
@@ -72,17 +64,19 @@ a {
 
 .header {
 	width: 100%;
+	padding-right: 60px;
+	padding-top: 44px;
+	padding-left: 58px;
 	position: relative;
 	height: 300px;
 	background-color: #f7e296;
 	color: #000000;
+	box-sizing: border-box;
 }
 
 
 .main-navigation {
-	
-	padding-top: 44px;
-	padding-left: 58px;
+	width: 100%;
 }
 
 .header-logo {
@@ -98,6 +92,17 @@ a {
 .header-logo:active path {
 	fill: #b2b2b2;
 }
+
+.user-navigation,
+.site-navigation {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	box-sizing: border-box;
+}
+
+
+
 
 .item-navigation-form {
 	position: relative;
@@ -144,17 +149,14 @@ a {
 
 }
 
-.item-navigation:nth-child(1) {
-	margin-right: 118px;
-	
-}
 
 .item-navigation:nth-child(2) {
-	margin-right: 218px;
+	margin-left: -98px;
 }
 
 .item-navigation:nth-child(3) {
-	margin-right: 42px;
+	margin-right: -174px;
+	
 }
 
 
@@ -283,7 +285,6 @@ a {
 	background-color: #000000;
 	top: 96%;
 	right: 85px;
-
 }
 
 
@@ -298,17 +299,7 @@ a {
 	color: #4d4d4d;
 }
 
-.user-navigation,
-.site-navigation {
-	display: flex;
-	flex-direction: row;
-}
 
-.user-navigation li,
-.site-navigation li {
-	margin-right: 20px;
-
-}
 
 .site-navigation {
 	margin-top: 15px;
@@ -325,6 +316,11 @@ a {
 .menu-navigation:first-child a:nth-child(1) {
 	padding-left: 1px;
 	margin-right: 302px;
+
+}
+
+.site-navigation li:last-child {
+	margin-right: -2px;
 
 }
 
@@ -2004,8 +2000,49 @@ input[type="radio"]:disabled + label{
 
 /* Всплывающая форма */
 
+@keyframes lift-right {
+  from {
+    transform: translate(-3600px, 50%);
+    }
+    
+ 
+  50% {
+    transform: translate(100%, 50%);
+   
+  }
 
-.button {
+  100% {
+
+  	transform: translateX(-50%, 50%);
+  }
+
+}
+
+
+	@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+
+.modal-close {
 	position: relative;
 	width: 55px;
 	height: 55px;
@@ -2017,8 +2054,8 @@ input[type="radio"]:disabled + label{
 
 
 
-.button::before,
-.button::after {
+.modal-close::before,
+.modal-close::after {
   content: "";
   position: absolute;
   top: 25px;
@@ -2028,12 +2065,12 @@ input[type="radio"]:disabled + label{
   background-color: #ffffff;
 }
 
-.button::before {
+.modal-close::before {
   transform: rotate(45deg);
 }
 
 
-.button::after {
+.modal-close::after {
   transform: rotate(-45deg);
 }
 
@@ -2046,8 +2083,8 @@ input[type="radio"]:disabled + label{
 	box-sizing: border-box;
 }
 
-.modal-login {
-	display: block;
+.modal-feedback {
+	display: none;
 	width: 960px;
 	left: 50%;
 	top: 50%;
@@ -2058,26 +2095,35 @@ input[type="radio"]:disabled + label{
 
 }
 
-.modal-login-form {
+.modal-show {
+	display: block;
+	animation: lift-right 2s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
+.modal-feedback-form {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 
 }
-.modal-login-form p {
+.modal-feedback-form p {
 	display: flex;
 	flex-direction: column;
 
 }
 
-.modal-login-form label {
+.modal-feedback-form label {
 	font: 800 18px/1.33 "Gilroy", Qanelas, sans-serif;
 
 }
 
-.modal-login-form input[type="text"],
-.modal-login-form input[type="email"],
-.modal-login-form textarea {
+.modal-feedback-form input[type="text"],
+.modal-feedback-form input[type="email"],
+.modal-feedback-form textarea {
 	width: 360px;
 	font: 400 14px/1.28 "Open Sans", Arial, sans-serif;
 	color: #adadad;
@@ -2087,19 +2133,19 @@ input[type="radio"]:disabled + label{
 	border: none;
 }
 
-.modal-login-form input[type="text"] {
+.modal-feedback-form input[type="text"] {
 	margin-right: 40px;
 
 }
 
-.modal-login-form textarea {
+.modal-feedback-form textarea {
 	width: 760px;
 	height: 156px;
 	outline: none;
 	margin-bottom: 30px;
 }
 
-.modal-login-form .btn {
+.modal-feedback-form .btn {
 	border: none;
 
 }
@@ -2125,8 +2171,8 @@ input[type="radio"]:disabled + label{
 
 }
 
-.modal-map .button, 
-.modal-login .button {
+.modal-map .modal-close, 
+.modal-feedback .modal-close {
 	position: absolute;
 	top: 23px;
 	right: 22px;
@@ -2136,12 +2182,12 @@ input[type="radio"]:disabled + label{
 
 
 
-.button:hover  {
+.modal-close:hover  {
 	background-color: #f0c52e;
 }
 
 
-.button:active {
+.modal-close:active {
 	background-color: #faedc0;
 }
 

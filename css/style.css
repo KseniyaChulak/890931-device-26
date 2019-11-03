@@ -896,23 +896,6 @@ input[type="radio"] {
 }
 
 
-
-
-.visually-hidden {
-	display: none;
-
-}
-
-.visually-hidden label {
-	font: 800 18px/1.33 "Gilroy", Qanelas, sans-serif;
-}
-
-.visually-hidden input,
-.visually-hidden textarea {
-	font: 14px/1.33 "Open Sans", Arial, sans-serif;
-}
-
-
 .footer {
 	width: 100%;
 	margin-top: 80px;
@@ -1386,7 +1369,7 @@ input[type="radio"] {
 	padding-right: 18px;
 }
 
-.hide-text {
+.visually-hidden {
 	font: 0/0 a;
      text-shadow: none;
     color: transparent;

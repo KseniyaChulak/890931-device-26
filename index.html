@@ -173,7 +173,7 @@
               </a>
             </li>
             <li>
-              <a class="popular-link" href="#">
+              <a class="popular-link" href="catalog.html">
                 <svg class="popular-monopod" xmlns="http://www.w3.org/2000/svg" width="86" height="117" viewBox="0 0 86 117">
                   <g fill="#363636">
                     <title>Моноподы для селфи</title>
@@ -377,7 +377,7 @@
           <section class="contacts">
             <h2>Контакты</h2>
             <p>Вы можете забрать товар сами, заехав в наш офис. Заодно вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-            <a href="map.html">
+            <a class="button-map" href="map.html">
               <img src="img/footer/map.jpg" alt="Наше местоположение" width="560" height="222">
             </a> 
             <a class="btn feedback" href="form.html">Напишите нам</a>
@@ -497,7 +497,9 @@
     </section>
     <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
-        <img src="img/footer/map-big.jpg" alt="Наше местоположение улица Строителей, 15, г. Москва" width="960" height="559">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779903!2d37.52742931660679!3d55.68703098053594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTE5MzEx!5e0!3m2!1sru!2sil!4v1572810781779!5m2!1sru!2sil" width="960" height="559" allowfullscreen>
+      </iframe>
+      <img src="img/footer/map-big.jpg" alt="Наше местоположение улица Строителей, 15, г. Москва" width="960" height="559">
       <button class="modal-close" type="button">
         <span class="visually-hidden">Закрыть</span>
       </button>
@@ -515,7 +517,7 @@
       
       var isStorageSupport = true;
       var storageName = "";
-      var starageEmail = "";
+      var storageEmail = "";
 
       try {
         storageName = localStorage.getItem("name");
@@ -570,6 +572,29 @@
           if (popup.classList.contains("modal-show")) {
             popup.classList.remove("modal-show");
             popup.classList.remove("modal-error");
+          }
+        }
+      });
+
+      var mapLink = document.querySelector(".button-map");
+      var mapPopup = document.querySelector(".modal-map");
+      var mapClose = mapPopup.querySelector(".modal-close");
+      
+      mapLink.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        mapPopup.classList.add("modal-show");
+      });
+
+      mapClose.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        mapPopup.classList.remove("modal-show");
+      });
+
+      window.addEventListener("keydown", function (evt) {
+        if (evt.keyCode === 27) {
+          evt.preventDefault();
+          if (mapPopup.classList.contains("modal-show")) {
+            mapPopup.classList.remove("modal-show");
           }
         }
       });

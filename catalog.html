@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mini.css">
   </head>
   <body class="body-catalog">
     <div class="container">
@@ -61,7 +61,7 @@
             </li>
           </ul>
           <ul class="site-navigation">
-            <li class="active menu-navigation"><a class="plus-link">Каталог товаров</a>
+            <li class="menu-navigation"><a class="plus-link" href="#">Каталог товаров</a>
               <ul class="sub-menu sub-menu-page-catalog">
                 <li><a href="#">Виртуальная реальность</a></li>
                 <li><a href="catalog.html">Моноподы для селфи</a></li>
@@ -173,7 +173,7 @@
                 <li class="catalog-list-item">
                   <article class="card-item">
                     <h3>
-                      <a href="#">Профессиональная<br> селфи-палка</a>
+                      <a class="catalog-list-item-link" href="#">Профессиональная селфи-палка</a>
                       <span>1 500 руб.</span>
                     </h3>
                     <div class="basket-link">
@@ -190,7 +190,7 @@
                 <li class="catalog-list-item">
                   <article class="card-item">
                     <h3>
-                      <a href="#">Непотопляемая селфи-палка</a>
+                      <a class="catalog-list-item-link" href="#">Непотопляемая селфи-палка</a>
                       <span>2 500 руб.</span>
                     </h3>
                     <div class="basket-link">
@@ -207,7 +207,7 @@
                 <li class="catalog-list-item">
                   <article class="card-item">
                     <h3>
-                      <a href="#">Селфи-палка &#171;Следуй за<br> мной&#187;</a>
+                      <a href="#">Селфи-палка &#171;Следуй за мной&#187;</a>
                       <span>4 900 руб.</span>
                     </h3>
                     <div class="basket-link">
@@ -224,14 +224,10 @@
               </ul>
               <div class="item-list-pager">
                 <ul class="list-pager">
-                  <li class="pager-current"><a>1</a></li>
-                  <li><a href="#">2</a></li>
-                  <li><a href="#">3</a></li>
-                </ul>
-                <ul class="list-pager-previous">
+                  <li class="list-pager-item pager-current"><a>1</a></li>
+                  <li class="list-pager-item"><a href="#">2</a></li>
+                  <li class="list-pager-item"><a href="#">3</a></li>
                   <li class="pager-previous"><a href="#">Назад</a></li>
-                </ul>
-                <ul class="list-pager-next">
                   <li class="pager-next"><a href="#">Вперед</a></li>
                 </ul>
               </div>
